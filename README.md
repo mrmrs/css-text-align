@@ -31,7 +31,7 @@ or download the css on github and include in your project.
 .tsp { text-align: start "."; }
 .tpe { text-align: "." end; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .tl-ns  { text-align: left; }
   .tr-ns  { text-align: right; }
   .tc-ns  { text-align: center; }
@@ -45,7 +45,7 @@ or download the css on github and include in your project.
   .tpe-ns { text-align: "." end; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .tl-m  { text-align: left; }
   .tr-m  { text-align: right; }
   .tc-m  { text-align: center; }
@@ -59,7 +59,7 @@ or download the css on github and include in your project.
   .tpe-m { text-align: "." end; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .tl-l  { text-align: left; }
   .tr-l  { text-align: right; }
   .tc-l  { text-align: center; }
