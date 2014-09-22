@@ -9,13 +9,18 @@
 *  -l  = large
 
 ## Install
+Grab the css partial from github and include it in your project or alternatively
+you can install it via npm:
 ```
 npm install --save-dev css-text-align
 ```
-or download the css on github and include in your project.
+View on [npm](https://www.npmjs.org/package/css-text-align)
+
 
 ## File Size
 
+1.6K text-align.css
+1.2K text-align.min.css
 
 ## The Code
 ```
