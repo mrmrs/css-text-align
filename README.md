@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-text-align)
 ## File Size
 
 1.6K text-align.css
-1.2K text-align.min.css
+1.2K text-align.min.css 
+281B minified and gzipped
 
 ## The Code
 ```
