@@ -1,7 +1,7 @@
 {
   "name": "css-text-align",
   "style": "text-align.css",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "http://github.com/mrmrs/css-text-align",
   "description": "Css module of single purpose classes for text align",
   "keywords": [
