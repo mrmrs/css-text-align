@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-text-align.css');
+const srcFile = path.join(__dirname, 'src', 'text-align.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-text-align.css',
+  filename: 'text-align.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-text-align.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'text-align.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-text-align.css',
+  filename: 'text-align.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-text-align.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'text-align.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-text-align.css     ${unminified.length} bytes`);
-console.log(`  dist/css-text-align.min.css ${minified.length} bytes`);
+console.log(`  dist/text-align.css     ${unminified.length} bytes`);
+console.log(`  dist/text-align.min.css ${minified.length} bytes`);
