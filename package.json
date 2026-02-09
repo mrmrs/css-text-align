@@ -1,38 +1,44 @@
 {
   "name": "css-text-align",
-  "style": "text-align.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-text-align",
-  "description": "Css module of single purpose classes for text align",
+  "version": "2.0.0",
+  "description": "Functional CSS for text-align",
+  "style": "dist/text-align.css",
+  "main": "dist/text-align.css",
+  "exports": {
+    ".": "./dist/text-align.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "text-align"
+    "text-align",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-text-align": {
+  "homepage": "https://github.com/mrmrs/css-text-align",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-text-align.git"
+    "url": "https://github.com/mrmrs/css-text-align.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-text-align/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-text-align/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
